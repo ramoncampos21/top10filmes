@@ -1,0 +1,652 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding-top: 100px;
+  }
+
+  body.filmes-page {
+    background: linear-gradient(-45deg, #000000, #0d001a, #1a1a1a, #000000);
+  background-size: 400% 400%;
+  animation: gradientAnim 5s ease infinite;
+  color: white;
+  min-height: 100vh;
+  background-attachment: fixed;
+}
+
+@keyframes gradientAnim {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+
+
+
+  .img-home{
+    position: absolute;
+    top:70px;
+    left: 100px;
+    width: 600px;
+    height:auto;
+  }
+
+  .miles{
+    position: absolute;
+  right: 0px;
+  height: 100vh; /* 100% da altura da tela */
+  width: auto;
+  bottom: 0;
+    
+  }
+
+  .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 30px;
+    z-index: 1000;
+  }
+
+  .menu a {
+    font-family: 'Akira';
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    transition: color 0.3s;
+    margin-right: 40px;
+  }
+
+  .menu a:hover{
+    color: blueviolet;
+    margin-right: 40px;
+  }
+
+  .degrade-circular-baixo {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 700px;
+    height: 700px;
+    background: radial-gradient(circle at bottom right, rgba(138, 43, 226, 0.6), transparent 70%);
+    z-index: 1001; 
+    pointer-events: none; 
+  }
+
+  @font-face {
+    font-family: 'Akira';
+    src: url('fonts/akira.otf.otf') format('opentype'); 
+  }
+
+  @font-face {
+    font-family: 'impact';
+    src: url('fonts/impact.ttf') format('opentype'); 
+  }
+
+  
+
+  .filme-section1 {
+    display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 100px;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  scroll-margin-top: 80px;
+
+  }
+
+  .filme-conteudo1{
+    max-width: 50%;
+  }
+
+  .posicao1{
+    font-size: 120px;
+    font-family: 'Akira';
+    color: blueviolet;
+    margin: 0;
+  }
+
+  .titulo-filme1{
+    font-size: 48px;
+    font-family: 'Akira';
+    color: white;
+    margin: 10px 0 0 0;
+  }
+
+  .diretor-ano1{
+    font-size: 24px;
+    font-family: 'Akira';
+    color: blueviolet;
+    margin: 10px 0 20px 0 ;
+  }
+
+  .sinopse1{
+    font-size: 26px;
+    font-family: 'impact';
+    line-height: 1.6;
+    color: white;
+  }
+
+  .poster1 img{
+    max-height: 75vh;
+    width:auto;
+    border-radius: 20px;
+  }
+
+
+
+
+.filme-section2 {
+    display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 100px;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  scroll-margin-top: 80px;
+
+  }
+
+  .filme-conteudo2{
+    max-width: 50%;
+  }
+
+  .posicao2{
+    font-size: 120px;
+    font-family: 'Akira';
+    color: blueviolet;
+    margin: 0;
+  }
+
+  .titulo-filme2{
+    font-size: 48px;
+    font-family: 'Akira';
+    color: white;
+    margin: 10px 0 0 0;
+  }
+
+  .diretor-ano2{
+    font-size: 24px;
+    font-family: 'Akira';
+    color: blueviolet;
+    margin: 10px 0 20px 0 ;
+  }
+
+  .sinopse2{
+    font-size: 26px;
+    font-family: 'impact';
+    line-height: 1.6;
+    color: white;
+  }
+
+  .poster2 img{
+    max-height: 75vh;
+    width:auto;
+    border-radius: 20px;
+  }
+  
+
+
+
+
+  
+.filme-section3 {
+    display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 100px;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  scroll-margin-top: 80px;
+
+  }
+
+  .filme-conteudo3{
+    max-width: 50%;
+  }
+
+  .posicao3{
+    font-size: 120px;
+    font-family: 'Akira';
+    color: blueviolet;
+    margin: 0;
+  }
+
+  .titulo-filme3{
+    font-size: 48px;
+    font-family: 'Akira';
+    color: white;
+    margin: 10px 0 0 0;
+  }
+
+  .diretor-ano3{
+    font-size: 24px;
+    font-family: 'Akira';
+    color: blueviolet;
+    margin: 10px 0 20px 0 ;
+  }
+
+  .sinopse3{
+    font-size: 26px;
+    font-family: 'impact';
+    line-height: 1.6;
+    color: white;
+  }
+
+  .poster3 img{
+    max-height: 75vh;
+    width:auto;
+    border-radius: 20px;
+  }
+
+
+
+  .filme-section4 {
+    display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 100px;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  scroll-margin-top: 80px;
+
+  }
+
+  .filme-conteudo4{
+    max-width: 50%;
+  }
+
+  .posicao4{
+    font-size: 120px;
+    font-family: 'Akira';
+    color: blueviolet;
+    margin: 0;
+  }
+
+  .titulo-filme4{
+    font-size: 48px;
+    font-family: 'Akira';
+    color: white;
+    margin: 10px 0 0 0;
+  }
+
+  .diretor-ano4{
+    font-size: 24px;
+    font-family: 'Akira';
+    color: blueviolet;
+    margin: 10px 0 20px 0 ;
+  }
+
+  .sinopse4{
+    font-size: 26px;
+    font-family: 'impact';
+    line-height: 1.6;
+    color: white;
+  }
+
+  .poster4 img{
+    max-height: 75vh;
+    width:auto;
+    border-radius: 20px;
+  }
+
+
+
+
+  .filme-section5 {
+    display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 100px;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  scroll-margin-top: 80px;
+
+  }
+
+  .filme-conteudo5{
+    max-width: 50%;
+  }
+
+  .posicao5{
+    font-size: 120px;
+    font-family: 'Akira';
+    color: blueviolet;
+    margin: 0;
+  }
+
+  .titulo-filme5{
+    font-size: 48px;
+    font-family: 'Akira';
+    color: white;
+    margin: 10px 0 0 0;
+  }
+
+  .diretor-ano5{
+    font-size: 24px;
+    font-family: 'Akira';
+    color: blueviolet;
+    margin: 10px 0 20px 0 ;
+  }
+
+  .sinopse5{
+    font-size: 26px;
+    font-family: 'impact';
+    line-height: 1.6;
+    color: white;
+  }
+
+  .poster5 img{
+    max-height: 75vh;
+    width:auto;
+    border-radius: 20px;
+  }
+  
+
+
+  .filme-section6 {
+    display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 100px;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  scroll-margin-top: 80px;
+
+  }
+
+  .filme-conteudo6{
+    max-width: 50%;
+  }
+
+  .posicao6{
+    font-size: 120px;
+    font-family: 'Akira';
+    color: blueviolet;
+    margin: 0;
+  }
+
+  .titulo-filme6{
+    font-size: 48px;
+    font-family: 'Akira';
+    color: white;
+    margin: 10px 0 0 0;
+  }
+
+  .diretor-ano6{
+    font-size: 24px;
+    font-family: 'Akira';
+    color: blueviolet;
+    margin: 10px 0 20px 0 ;
+  }
+
+  .sinopse6{
+    font-size: 26px;
+    font-family: 'impact';
+    line-height: 1.6;
+    color: white;
+  }
+
+  .poster6 img{
+    max-height: 75vh;
+    width:auto;
+    border-radius: 20px;
+  }
+
+
+
+
+  .filme-section7 {
+    display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 100px;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  scroll-margin-top: 80px;
+
+  }
+
+  .filme-conteudo7{
+    max-width: 50%;
+  }
+
+  .posicao7{
+    font-size: 120px;
+    font-family: 'Akira';
+    color: blueviolet;
+    margin: 0;
+  }
+
+  .titulo-filme7{
+    font-size: 48px;
+    font-family: 'Akira';
+    color: white;
+    margin: 10px 0 0 0;
+  }
+
+  .diretor-ano7{
+    font-size: 24px;
+    font-family: 'Akira';
+    color: blueviolet;
+    margin: 10px 0 20px 0 ;
+  }
+
+  .sinopse7{
+    font-size: 26px;
+    font-family: 'impact';
+    line-height: 1.6;
+    color: white;
+  }
+
+  .poster7 img{
+    max-height: 75vh;
+    width:auto;
+    border-radius: 20px;
+  }
+
+
+
+  .filme-section8 {
+    display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 100px;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  scroll-margin-top: 80px;
+
+  }
+
+  .filme-conteudo8{
+    max-width: 50%;
+  }
+
+  .posicao8{
+    font-size: 120px;
+    font-family: 'Akira';
+    color: blueviolet;
+    margin: 0;
+  }
+
+  .titulo-filme8{
+    font-size: 48px;
+    font-family: 'Akira';
+    color: white;
+    margin: 10px 0 0 0;
+  }
+
+  .diretor-ano8{
+    font-size: 24px;
+    font-family: 'Akira';
+    color: blueviolet;
+    margin: 10px 0 20px 0 ;
+  }
+
+  .sinopse8{
+    font-size: 26px;
+    font-family: 'impact';
+    line-height: 1.6;
+    color: white;
+  }
+
+  .poster8 img{
+    max-height: 75vh;
+    width:auto;
+    border-radius: 20px;
+  }
+
+
+
+
+  .filme-section9 {
+    display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 100px;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  scroll-margin-top: 80px;
+
+  }
+
+  .filme-conteudo9{
+    max-width: 50%;
+  }
+
+  .posicao9{
+    font-size: 120px;
+    font-family: 'Akira';
+    color: blueviolet;
+    margin: 0;
+  }
+
+  .titulo-filme9{
+    font-size: 48px;
+    font-family: 'Akira';
+    color: white;
+    margin: 10px 0 0 0;
+  }
+
+  .diretor-ano9{
+    font-size: 24px;
+    font-family: 'Akira';
+    color: blueviolet;
+    margin: 10px 0 20px 0 ;
+  }
+
+  .sinopse9{
+    font-size: 26px;
+    font-family: 'impact';
+    line-height: 1.6;
+    color: white;
+  }
+
+  .poster9 img{
+    max-height: 75vh;
+    width:auto;
+    border-radius: 20px;
+  }
+
+
+  .filme-section10 {
+    display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 100px;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  scroll-margin-top: 80px;
+
+  }
+
+  .filme-conteudo10{
+    max-width: 50%;
+  }
+
+  .posicao10{
+    font-size: 120px;
+    font-family: 'Akira';
+    color: blueviolet;
+    margin: 0;
+  }
+
+  .titulo-filme10{
+    font-size: 48px;
+    font-family: 'Akira';
+    color: white;
+    margin: 10px 0 0 0;
+  }
+
+  .diretor-ano10{
+    font-size: 24px;
+    font-family: 'Akira';
+    color: blueviolet;
+    margin: 10px 0 20px 0 ;
+  }
+
+  .sinopse10{
+    font-size: 26px;
+    font-family: 'impact';
+    line-height: 1.6;
+    color: white;
+  }
+
+  .poster10 img{
+    max-height: 75vh;
+    width:auto;
+    border-radius: 20px;
+  }
+
+
+
+
+
+  .filme-section1,
+  .filme-section2,
+  .filme-section3,
+  .filme-section4,
+  .filme-section5,
+  .filme-section6,
+  .filme-section7,
+  .filme-section8,
+  .filme-section9,
+  .filme-section10 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 100px;
+    min-height: 100vh;
+    background-color: transparent;
+    color: white;
+    scroll-margin-top: 80px;
+  }
+
+  
+
+  
